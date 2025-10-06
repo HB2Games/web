@@ -6,13 +6,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;             /* agregado */
-    flex-direction: column;    /* agregado */
-    min-height: 100vh;         /* agregado */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body {
@@ -20,9 +21,9 @@ body {
     color: #e0e0e0;
     line-height: 1.6;
 
-    flex-grow: 1;              /* agregado */
-    display: flex;             /* agregado */
-    flex-direction: column;    /* agregado */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -91,7 +92,7 @@ nav {
 .hero-content {
     width: 60%;
     z-index: 2;
-    position: relative; 
+    position: relative;
 }
 
 .hero h1 {
@@ -132,7 +133,7 @@ nav {
     background-size: cover;
     background-position: center;
     z-index: 0;
-    pointer-events: none; /* Por si se clickea encima */
+    pointer-events: none;
 }
 
 /* Sección Juegos */
@@ -241,12 +242,12 @@ nav {
     color: #bb86fc;
 }
 
-/* Sección Contacto */
+/* contacto */
 .contact {
     padding: 80px 0;
     background-color: #1e1e1e;
 
-    flex-grow: 1; /* agregado para que crezca y empuje el footer */
+    flex-grow: 1;
 }
 
 .contact-form {
@@ -299,80 +300,80 @@ nav {
 
 
 .contact h1 {
-  text-align: center;
-  font-size: 3rem;
-  color: #FFFFFF;
-  margin-bottom: 15px;
-  font-weight: 900;
-  letter-spacing: 1.2px;
+    text-align: center;
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
 
 }
 
 .contact p {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  color: #cccccc;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-weight: 400;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: #cccccc;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .social-cards {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  margin-top: 0; 
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  background: transparent;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background: transparent;
+    padding: 0;
 }
 
 .social-card {
-  background: transparent;
-  border-radius: 12px;
-  padding: 40px 60px;
-  flex: 1 1 45%;
-  max-width: 280px;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  backdrop-filter: none;
+    background: transparent;
+    border-radius: 12px;
+    padding: 40px 60px;
+    flex: 1 1 45%;
+    max-width: 280px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    backdrop-filter: none;
 }
 
 .social-card:hover {
-  background-color: rgba(187, 134, 252, 0.1);
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(187, 134, 252, 0.3);
+    background-color: rgba(187, 134, 252, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(187, 134, 252, 0.3);
 }
 
 .social-card i {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  color: white;
-  transition: filter 0.3s ease;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: white;
+    transition: filter 0.3s ease;
 }
 
 .social-card:hover i {
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
 }
 
 .social-card span {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  transition: color 0.3s ease;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .social-card:hover span {
-  color: white;
+    color: white;
 }
 
 /* Footer */
@@ -382,7 +383,7 @@ footer {
     text-align: center;
     border-top: 1px solid #252525;
 
-    flex-shrink: 0; /* agregado para que el footer no se encoja */
+    flex-shrink: 0;
 }
 
 .footer-links {
@@ -407,30 +408,30 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .nav-links {
         margin-top: 20px;
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .nav-links li {
         margin-left: 0;
     }
-    
+
     .hero {
         height: auto;
         padding: 100px 0;
     }
-    
+
     .hero-content {
         width: 100%;
     }
-    
+
     .hero-image {
         display: none;
     }
-    
+
     .team-members {
         flex-direction: column;
         align-items: center;
