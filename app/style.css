@@ -189,12 +189,7 @@ nav {
     background-color: #121212;
 }
 
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    justify-items: center; 
-}
+.team-members { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
 
 .member-card {
     background-color: #252525;
