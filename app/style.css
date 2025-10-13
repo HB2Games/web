@@ -200,7 +200,8 @@ nav {
     background-color: #252525;
     border-radius: 8px;
     padding: 30px;
-    width: 300px;
+    width: 22%;
+    min-width: 250px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
