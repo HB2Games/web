@@ -320,9 +320,11 @@ nav {
 .social-card {
     background: transparent;
     border-radius: 12px;
-    padding: 40px 60px;
-    flex: 1 1 45%;
-    max-width: 280px;
+    padding: 30px 20px;
+    width: 200px; 
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 100%; 
     text-align: center;
     color: white;
     text-decoration: none;
@@ -332,7 +334,6 @@ nav {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    backdrop-filter: none;
 }
 
 .social-card:hover {
