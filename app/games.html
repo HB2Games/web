@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-     <link rel="icon" type="image/png" href="https://i.imgur.com/apgoHop.png">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/apgoHop.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HB²</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
     <nav>
         <div class="container nav-container">
             <a href="index.html" class="logo">HB<span>²</span></a>
@@ -20,28 +20,54 @@
         </div>
     </nav>
     
- 
     <section id="games" class="games">
         <div class="container">
             <h2 class="section-title">Nuestros Juegos</h2>
             
-            <div class="game-card">
-                <div class="game-image" style="background-image: url('https://placehold.co/800x450/252525/bb86fc?text=Shadows of Nectar')"></div>
+            <div class="game-card" tabindex="0">
+                <div class="game-image" style="background-image: url('https://i.imgur.com/2IHe6Gh.png')"></div>
                 <div class="game-content">
                     <h3 class="game-title">Shadows of Nectar</h3>
                     <p class="game-description">Un mundo donde tus decisiones moldean la realidad. El poder es tentador y cada acción deja huella. Nada es lo que parece.</p>
                     <p class="game-description"><strong>Estado:</strong> En desarrollo</p>
+                    
+                    <div class="game-more-info">
+                        <p><strong>Género:</strong> Metroidvania 2D</p>
+                        <p><strong>Plataformas:</strong> PC (Steam e Itch.io)</p>
+                        <p><strong>Descripción detallada: </strong>Shadows of Nectar es un Metroidvania 2D ambientado en La Hélice, un mundo donde existe una sustancia conocida como Néctar, capaz de otorgar fuerza y habilidades más allá de lo humano. Pero el Néctar podría afectar mucho más de lo que imaginas.</p>
+                    </div>
+
                 </div>
             </div>
-        </div>
+            
+            </div>
     </section>
+    
     <footer>
         <div class="container">
-           
             <p class="copyright">© 2025 HB². Todos los derechos reservados.</p>
         </div>
     </footer>
     
-    
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', () => {
+//funcion para que se abra el container y fuap, se muestre la info
+            const gameCards = document.querySelectorAll('.game-card');
+            gameCards.forEach(card => {
+                const toggleExpansion = () => {
+                   
+                    card.classList.toggle('expanded');
+                };
+                card.addEventListener('click', toggleExpansion);
+                card.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        toggleExpansion();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
